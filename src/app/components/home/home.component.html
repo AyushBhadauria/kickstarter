@@ -1,0 +1,22 @@
+<div *ngIf=loading class="loading">Loading&#8230;</div>
+<div  *ngIf=!loading class="container">
+<ul class="cards">
+    <li class="cards__item" *ngFor="let post of posts ; let i = index">
+      <div class="card">
+        <div class="card__image card__image--fence">
+            <a><img src=" https://unsplash.it/800/600?image=82"/></a>
+        </div>
+        <div class="card__content">
+          <div class="card__title">{{post.title}}</div>
+     <span class=" text-muted small" style="font-size:14px">by {{post.by}}</span>
+          <p class="card__text"> {{post.blurb }}</p>
+          <span class=" text-muted small" style="font-size:14px">{{post.currency}} pledged</span>
+          <span class=" text-muted small" style="font-size:14px"> Backed by </span>
+          <span class=" text-muted small" style="font-size:14px">{{post.state}} ,{{post.country}}</span>
+          <button class="btn btn--block card__btn">Know More</button>
+        </div>
+      </div>
+    </li>
+   
+  </ul>
+</div>
