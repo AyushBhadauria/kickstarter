@@ -1,4 +1,4 @@
-export class Post{
+export interface Post{
     sno:number;
     amtpleaded:number;
     blurb:string;
@@ -7,7 +7,7 @@ export class Post{
     currency:string;
     endtime:string;
     location:string;
-    numbackers:number;
+    "num.backers":number;
     state:string;
     title:string;
     type:string;

@@ -10,8 +10,10 @@
           <div class="card__title">{{post.title}}</div>
         <span class=" text-muted small" style="font-size:14px">by {{post.by}}</span>
           <p class="card__text"> {{post.blurb }}</p>
-          <span class=" text-muted small" style="font-size:14px">{{post.currency}} pledged</span>
-          <span class=" text-muted small" style="font-size:14px"> Backed by </span>
+          <span class=" text-muted small" style="font-size:14px">{{post.currency}} {{post['amt.pledged']}} pledged</span>
+          <span class=" text-muted small" style="font-size:14px">{{post['num.backers']}}% funded </span>
+          <span class=" text-muted small" style="font-size:14px"> Backed by {{post['num.backers']}} </span>
+          
           <span class=" text-muted small" style="font-size:14px">{{post.state}} ,{{post.country}}</span>
           <button class="btn btn--block card__btn">Know More</button>
         </div>
