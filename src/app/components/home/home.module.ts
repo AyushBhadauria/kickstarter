@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { DataService } from '../../service/data.service';
 import { Routes, RouterModule } from '@angular/router';
+
+import { PagerService } from '../../service/pagerService';
+
 const routes: Routes = [
     {
         path: '',
@@ -16,6 +19,6 @@ const routes: Routes = [
   ],
   declarations: [HomeComponent],
   exports:[HomeComponent],
-  providers:[DataService]
+  providers:[DataService,PagerService]
 })
 export class HomeModule { }

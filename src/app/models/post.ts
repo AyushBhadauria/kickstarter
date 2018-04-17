@@ -11,5 +11,6 @@ export class Post{
     state:string;
     title:string;
     type:string;
-    url:string
+    url:string;
+
 }
